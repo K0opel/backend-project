@@ -5,9 +5,10 @@ const db = new Sequelize('b1ywi8yntr2twxgtz1ac', 'uyyadb4imvfv0ran', 'W6a4OUseGK
     dialect: 'mysql',
     port: 3306,
     dialectOptions: {
-        connectTimeout: 60000, // Set a longer connection timeout (in milliseconds)
-      },
-      timezone: '+07:00'
+      connectTimeout: 60000, // Set a longer connection timeout (in milliseconds)
+    },
+    timezone: '+07:00'
 });
+
 
 export default db;
