@@ -2,8 +2,10 @@ import express from "express";
 import FileUpload from "express-fileupload";
 import cors from "cors";
 import ProductRoute from "./routes/ProductRoute.js"
-
 const app = express();
+app.use(cors({
+    origin: 'http://localhost:3000'
+  }));
 
 app.use(cors());
 app.use(express.json());
